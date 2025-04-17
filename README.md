@@ -1,4 +1,4 @@
-# 🛍️ Djoli - Interface de gestion de produits
+# Djoli - Interface de gestion de produits
 
 ![React](https://img.shields.io/badge/React-v18-blue?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-v4.9-blue?style=flat-square)
