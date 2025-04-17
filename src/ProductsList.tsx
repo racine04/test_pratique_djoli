@@ -71,6 +71,7 @@ const ProductList: React.FC = () => {
               <Card title={product.name} bordered>
                 <img src={product.img} alt="image_product" style={{ width: '100%', height: '150px', objectFit: 'cover' }} />
                 <p><strong>Code :</strong> {product.slug}</p>
+                <p><strong>Prix actuel :</strong> {product.price}</p>
                 <Link to={`/add_product/${product.slug}`}>
                   <Button type="primary">Ajouter un prix</Button>
                 </Link>
