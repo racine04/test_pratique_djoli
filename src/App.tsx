@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   ShoppingOutlined,
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme } from 'antd';
+import ProductList from './ProductsList';
+import DetailPrice from './DetailPrice';
 
 const { Header, Sider, Content } = Layout;
 
@@ -34,7 +38,7 @@ const App: React.FC = () => {
             {
               key: '1',
               icon: <ShoppingOutlined />,
-              label: 'Accueil',
+              label: <Link to="/">Accueil</Link>,
             }
           ]}
         />
@@ -65,7 +69,11 @@ const App: React.FC = () => {
             borderRadius: borderRadiusLG,
           }}
         >
-          {/* Ici viendront les composants dynamiques */}
+          <Routes>
+  <Route path="/" element={<ProductList />} />
+  <Route path="/add_product/:slug" element={<DetailPrice />} />
+</Routes>
+
         </Content>
       </Layout>
     </Layout>
