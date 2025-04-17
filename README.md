@@ -49,8 +49,8 @@ Ce projet a été réalisé dans le cadre d'un test technique visant à démontr
 ### 1. Cloner le dépôt
 
 ```bash
-git clone [https://github.com/racine04/test_djoli/](https://github.com/racine04/test_djoli/)
-cd test_djoli
+git clone https://github.com/racine04/test_pratique_djoli/
+cd test_pratique_djoli
 ```
 
 ### 2. Installer les dépendances
